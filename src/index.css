@@ -1,0 +1,52 @@
+@import "tailwindcss";
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    color: #1a1a1a;
+    background-color: #ffffff;
+  }
+
+  h1, h2, h3, h4, .font-heading {
+    font-family: 'Outfit', system-ui, -apple-system, sans-serif;
+    letter-spacing: -0.02em;
+  }
+
+  .font-sans-ui {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+}
+
+:root {
+  --cti-blue: #266CAC;
+  --cti-blue-dark: #1a4d7a;
+  --cti-blue-light: #4a8bc2;
+  --cti-gold: #E0A86A;
+  --cti-gold-light: #f0c896;
+  --cti-red: #A52834;
+  --cti-cream: #faf8f5;
+  --cti-light: #f4f7fa;
+  --cti-dark: #1a1a1a;
+  --cti-gray: #666666;
+  --cti-border: #e0e6ec;
+  --cti-green: #22c55e;
+}
+
+@keyframes pulse-subtle {
+  0%, 100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.4;
+    transform: scale(0.95);
+  }
+}
+
+.animate-status-pulse {
+  animation: pulse-subtle 2s infinite ease-in-out;
+}
